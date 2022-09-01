@@ -1,0 +1,479 @@
+header {
+      padding-left: 12px;
+      font-size: 14px;
+      position: sticky;
+      top: 0px;
+      display: flex;
+      flex-direction: row;
+      background: var(--color-secondary);
+      width: auto;
+      height: 80px;
+      border-bottom: solid 2px ;
+      border-color: var(--color-primary);
+      z-index: 10000;
+      
+      
+      
+
+}
+
+.logo1 , .logo2 {
+   position: relative;
+   width: 110px;
+   height: 45px;
+   transition: 0.6s;
+   top: 18px;
+   left: 12px;
+
+}
+.list {
+
+       list-style: none;
+       display: flex;
+       padding: 7px;
+       font-size: medium;
+       font-family: Open Sans, Segoe UI, Tahoma, Geneva, Verdana, sans-serif ; 
+       color: var(--font-color);
+       position: absolute;
+       left: 320px;
+       
+       
+}
+.screen {
+       display: none;
+
+}
+.list li {
+      
+      padding: 22px;
+      align-self: center;
+      margin-left: 15px;
+      cursor: pointer;    
+
+}
+.list li a {
+
+       text-decoration: none;
+       color: var(--font-color);
+        
+}
+.li {
+ 
+  border-bottom: solid 4px ;
+  border-color: var(--color-secondary) ;
+  
+  
+}
+
+.list li:hover {
+
+     border-bottom: solid 4px ;
+     border-color: var(--font-color);
+
+}
+
+.active {
+
+       border-bottom: solid 4px ;
+       border-color: rgb(11,120,13);     
+}
+
+.gitlogo {
+      
+       width: 30px;
+       height: 30px;
+       align-self: center;
+       position: absolute;
+       right: 30px;
+}
+
+/* dark theme */
+
+.dark .light-mode-only, .app:not(.dark) .dark-mode-only {
+
+         display: none;
+}
+.light .dark-mode-only, .app:not(.light) .light-mode-only {
+
+  display: none;
+
+}
+
+.dark .logo2, .app:not(.dark) .logo1 {
+
+   display: none;
+}
+
+.light .logo1, .app:not(.light) .logo2 {
+
+    display: none;
+}
+
+
+.theme-buttons {
+
+       font-size: 2rem;
+      
+}
+
+.dark-mode-toggle {
+
+       color: rgb(132,186,100) ;
+       cursor: pointer;
+       background-color: var(--color-secondary);
+       /* border-style: dotted ; */
+       /* border-color: rgb(132,186,100); */
+       position: absolute; 
+       right: 90px ;
+       padding: 5px;
+       border-style: dotted;
+       border-width: 2px;
+       border-color: var(--color-secondary);
+       
+}
+
+
+.dark-mode-toggle:focus {
+
+  border-style: dotted ;
+  border-width: 2px;
+  border-color: rgb(132,186,100);
+}
+
+ /* .toc summary::marker{
+
+      unicode-bidi: isolate;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      text-indent: 0px !important;
+      text-align: start !important;
+      text-align-last: start !important; 
+
+
+}  */
+
+.side-nav-open {
+
+        display: none;
+}
+
+
+@media only screen  and (max-width: 800px ) {
+
+       header {
+              padding-left: 2px;
+              width: 100vw;
+              height: 108px;
+              border-bottom: solid 2px ;
+              border-color: var(--color-primary);
+              z-index: 10000;
+       
+       }
+       .imglogo{
+
+              width: 270px;
+              
+         }
+         
+       .logo1 , .logo2 {
+              width: 70px;
+              height: 70px;
+              top:-8px;
+              left: 10px;
+           
+           }
+           .list {
+
+              padding: 4px;
+              font-size: medium;
+              left: 32px;
+              top: 58px;
+       }
+       .list li {
+      
+              padding: 7px;
+              align-self: center;
+              margin-left: 5px;
+              cursor: pointer;      
+        }
+
+        .screen {
+              display:inline ;
+       
+       }
+
+       .list li:nth-child(2) {
+              display: none;
+       }
+
+       .gitlogo {
+      
+              width: 25px;
+              height: 25px;
+              right: 9px;
+              top: 16px;
+       }
+       .dark-mode-toggle {
+
+              cursor: pointer;
+              position: absolute; 
+              right: 40px ;
+              padding: 5px;
+              width: 50px;
+              height: 60px;
+              top: -8px;
+              
+              
+       }
+       .dark-mode-only , .light-mode-only {
+
+              position: absolute;   
+              right: 18px;
+              top: 4px;
+              height: 20px;
+              width: 20px;
+       }
+       .dark-mode-toggle:focus {
+
+              border-style: dotted;
+              border-color: rgb(132,186,100);
+              border-bottom: none;
+              
+            }
+
+       .side-nav {
+
+                 display: none;
+
+       } 
+
+       .open {
+              display: grid;
+              background-color: var(--color-menu);
+              height: 100vh;
+              width: 100vw;
+       }
+
+       .open h2 {
+
+                max-width: 350px;
+                margin-left: 10px;
+                
+       }
+       .open .side-nav-item10 h5 {
+
+               
+               padding-bottom: 40px;
+       }
+       .open .side-nav-item9 h5 {
+
+              margin-top: 44px;
+              margin-bottom: 47px;
+      }
+      .open .side-nav-item8 h5 {
+
+       margin-top: 47px;
+      }
+      .open .side-nav-item7 h5 {
+
+       margin-top: 47px;
+      }
+      .open .side-nav-item6 h5 {
+
+       margin-top: 23px;
+      }
+      .open .side-nav-item h5 {
+
+       margin-top: 20px;
+      }
+        
+      .article-reader {
+
+             margin-left: 10px;
+             
+      } 
+
+      .side-nav-open{
+
+          display: flex;
+          height: 50px;
+          width: 100vw;
+          border-radius: 0%;
+          border-style: none;
+          background-color: var(--color-menu);
+          background-clip: content-box;
+          font-weight: 200;
+          position: sticky;
+          transition: color .28s,background-color .28s;
+          user-select: none;
+          align-items: center;
+          left: 50px;
+   }
+
+   .notopen {
+
+       display: none;
+}
+
+
+   .side-nav-open span {
+
+          padding-left: 8px;
+          margin-bottom: 4px;
+          font-size: medium;
+          color: var(--font-color) !important;
+          font-family: Open Sans, Segoe UI, Tahoma, Geneva, Verdana, sans-serif ; 
+
+   }
+
+   .side-nav-open::before{
+
+       content: var(--url);
+       padding-bottom: 21px ;
+       padding-left: 9px;
+       color: var(--font-color);
+       width: 10;
+       height: 9px;
+   }
+
+   .side-nav-open1::before{
+
+       content: var(--urls);
+       padding-left: 9px;
+       padding-top: 10px;
+       color: var(--font-color);
+       width: 10;
+       height: 9px;
+       
+      
+       
+   }
+
+
+
+
+   .side-nav-open1{
+
+       display: flex;
+       height: 50px;
+       width: 100vw;
+       border-radius: 0%;
+       border-style: none;
+       background-color: var(--color-menu);
+       background-clip: content-box;
+       font-weight: 200;
+       position: sticky;
+       transition: color .28s,background-color .28s;
+       user-select: none;
+       
+       left: 50px;
+}
+
+   .toc, .toc2 {
+
+       padding-top: 10px;
+ }
+   .article-reader h1 {
+
+       font-size: 3.2rem ; 
+       
+       
+  }
+  .article-reader {
+
+       padding: 10px;
+    
+  }
+    
+       
+}
+
+@media only screen  and (max-height: 729px ) {
+
+
+       .open .side-nav-item10 h5 {
+
+              padding-bottom: 40px;
+              margin-top: 34px;
+             
+      }
+      .open {
+       
+       height: 100%;
+       
+      
+}
+
+
+}
+
+@media only screen  and (max-height: 570px ) {
+
+       .open {
+       
+              width: 108vw;
+              margin-right: 0;
+                
+       }
+
+       header {
+
+              width: 108vw;
+              
+       }
+       .side-nav-open {
+              width: 108vw;
+       }
+       .article-reader {
+              width: 108vw;
+       }
+       .side-nav-open1 {
+              width: 108vw;
+       }
+       
+}
+@media only screen  and (max-width: 290px ) {
+
+       .open {
+       
+              width: 100vw;
+              margin-right: 0;
+                
+       }
+
+       header {
+
+              width: 100vw;
+              
+       }
+       .side-nav-open {
+              width: 100vw;
+       }
+       .article-reader {
+              width: 100vw;
+       }
+       .side-nav-open1 {
+              width: 100vw;
+       }
+       .list {
+
+              padding: 0px;
+              position: relative;
+              top: 30px;
+              left: -64px;
+
+       }
+       .list li {
+              padding: 2px;
+              
+       }
+       .article-reader h1 {
+
+              font-size: xx-large;
+       }
+
+       
+}
+
+
+

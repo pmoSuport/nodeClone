@@ -1,0 +1,34 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.light {
+        
+       --color-primary: rgb(246,247,249);
+       --color-secondary: rgb(255,255,255);
+       --urls: url("./images/closelight.PNG");
+       --font-color: rgb(44, 52, 55);
+       --color-accent:rgb(203,212,217);
+       --color-code: #e9edf0;
+       --color-element: #2c3437;
+       --color-menu: #f6f7f9;
+       --url: url("./images/menulight.PNG");
+      
+}
+
+.dark {
+
+       --color-primary: rgb(13,17,29);
+       --color-secondary: rgb(9,12,21);
+       --urls: url("./images/closedark.PNG");
+       --font-color: rgb(203, 212, 217);
+       --color-accent: rgb(203, 212, 217);
+       --color-code: #ffffff;
+       --color-element:#2c3437;
+       --color-menu:#0d111d;
+       --url: url("./images/menudark.PNG");
+       
+
+}
